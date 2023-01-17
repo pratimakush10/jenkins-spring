@@ -1,4 +1,4 @@
-FROM openjdk:11.0.17
+FROM adoptopenjdk/openjdk11
 EXPOSE 8086
-ADD target/jenkins-job.jar jenkins-job.jar
-ENTRYPOINT ["java","-jar","/jenkins-job.jar"]
+ADD target/springboot-docker.jar springboot-docker.jar
+ENTRYPOINT ["java","-jar","/springboot-docker.jar"]
